@@ -1,5 +1,4 @@
 import { CreateUserParameters, IUserRepository } from '../../../ports/user-repository';
-import { Config } from '../../config';
 import { Logger } from 'pino';
 import mongoose, { Model } from 'mongoose';
 import { User } from '../../../domain/user';
