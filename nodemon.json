@@ -1,0 +1,11 @@
+{
+  "verbose": true,
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/", "dist/", "coverage/"],
+  "watch": ["src", ".env"],
+  "execMap": {
+    "ts": "node --inspect=0.0.0.0:9229 --trace-warnings -r ts-node/register"
+  },
+  "ext": "js,json,ts,graphql",
+  "delay": 5000
+}
