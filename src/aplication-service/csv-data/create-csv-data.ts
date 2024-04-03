@@ -1,6 +1,6 @@
 import { Logger } from 'pino';
 import { ErrorType } from '../../helpers/types/error-types';
-import { CsvDataDto } from '../../interfaces/http/routers/cvs/dto/csv-data.dto';
+import { CsvDataDto } from '../../interfaces/http/routers/csv/dto/csv-data.dto';
 import { ICsvDataRepository } from '../../ports/csv-data-repository';
 import * as console from 'console';
 

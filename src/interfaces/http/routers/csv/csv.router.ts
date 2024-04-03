@@ -28,12 +28,14 @@ export const csvRouter = async ({ logger, csvDataRepository }: CsvLoaderRouterPa
     const results: CsvDataDto[] = [];
     const bufferStream = new Readable();
 
-    Object.values(csvFiles).forEach((file) => {
+    for (const file of Object.values(csvFiles)) {
       const csvFileData = file.data;
 
       bufferStream.push(csvFileData);
       bufferStream.push(null);
-    });
+
+      break;
+    }
 
     bufferStream
       .pipe(csvParser())

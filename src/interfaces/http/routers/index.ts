@@ -2,7 +2,7 @@ import { authRouter } from './auth/auth.router';
 import { Logger } from 'pino';
 import { Config } from '../../../infrastructure/config';
 import { IUserRepository } from '../../../ports/user-repository';
-import { csvRouter } from './cvs/csv.router';
+import { csvRouter } from './csv/csv.router';
 import { ICsvDataRepository } from '../../../ports/csv-data-repository';
 
 type RouterParameters = {
